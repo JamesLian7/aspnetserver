@@ -1,0 +1,8 @@
+﻿[*.cs]
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = silent
+
+
+# CS8603: Possible null reference return.
+dotnet_diagnostic.CS8603.severity = warning
