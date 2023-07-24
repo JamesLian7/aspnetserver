@@ -3,6 +3,19 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CORSPolicy",
+        builder =>
+        {
+            builder
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .WithOrigins("http://localhost:3002", "https://appname.azurestaticapps.net");
+
+
+        });
+});
 
 // Add services to the container.
 
@@ -35,6 +48,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CORSPolicy");
 
 app.MapGet("/get-all-posts", async () => await PostsRepository.GetPostsAsync())
     .WithTags("Posts Endpoints");
