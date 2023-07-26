@@ -1,51 +1,37 @@
 ﻿using aspnetserver.Data;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORSPolicy",
         builder =>
         {
             builder
-            .AllowAnyOrigin()
+            .AllowAnyMethod()
             .AllowAnyHeader()
-            .WithOrigins("http://localhost:3002", "https://appname.azurestaticapps.net");
-
-
+            .WithOrigins("http://localhost:3000", "https://calm-water-04859b403.azurestaticapps.net");
         });
 });
 
 // Add services to the container.
-
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(swaggerGenOptions =>
 {
-    swaggerGenOptions.SwaggerDoc("v1", new OpenApiInfo { Title = "SPEED CAMERA AND COP STOP UPDATES", Version = "v1" });
-}
-    );
+    swaggerGenOptions.SwaggerDoc("v1", new OpenApiInfo { Title = "ASP.NET React Tutorial", Version = "v1" });
+});
 
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI(SwaggerUIOptions =>
+app.UseSwaggerUI(swaggerUIOptions =>
 {
-    SwaggerUIOptions.DocumentTitle = "Speeding Camera and Cop Stops Updates";
-    SwaggerUIOptions.SwaggerEndpoint("/swagger/v1/swagger.json", "Web API Serving a very simple Post model");
-    SwaggerUIOptions.RoutePrefix = string.Empty;
-
-
+    swaggerUIOptions.DocumentTitle = "ASP.NET React Tutorial";
+    swaggerUIOptions.SwaggerEndpoint("/swagger/v1/swagger.json", "Web API serving a very simple Post model.");
+    swaggerUIOptions.RoutePrefix = string.Empty;
 });
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
 app.UseHttpsRedirection();
 
@@ -53,6 +39,7 @@ app.UseCors("CORSPolicy");
 
 app.MapGet("/get-all-posts", async () => await PostsRepository.GetPostsAsync())
     .WithTags("Posts Endpoints");
+
 app.MapGet("/get-post-by-id/{postId}", async (int postId) =>
 {
     Post postToReturn = await PostsRepository.GetPostByIdAsync(postId);
@@ -110,4 +97,3 @@ app.MapDelete("/delete-post-by-id/{postId}", async (int postId) =>
 }).WithTags("Posts Endpoints");
 
 app.Run();
-
