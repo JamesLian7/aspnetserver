@@ -1,0 +1,15 @@
+.box{
+    box-sizing: border-box;
+    color: blue;
+    font: blue;
+}
+
+.site-title{
+    color: blue;
+    text-decoration: none;
+}
+
+.navItems{
+    padding-right: 250%;
+    padding: 10px;
+}
