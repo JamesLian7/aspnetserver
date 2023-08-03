@@ -1,15 +1,14 @@
 .box{
     box-sizing: border-box;
-    color: blue;
-    font: blue;
+    color: green;
+    font: green;
 }
 
 .site-title{
-    color: blue;
+    color: green;
     text-decoration: none;
 }
 
-.navItems{
-    padding-right: 250%;
-    padding: 10px;
+.help{
+    background-color: green;
 }

@@ -3,7 +3,9 @@ import Constants from "./utilities/Constants";
 import PostCreateForm from "./components/PostCreateForm";
 import PostUpdateForm from "./components/PostUpdateForm";
 import "./styles.css"
-import NavBar from "./components/NavBar";
+import ResponsiveAppBar from "./components/NavBar";
+
+
 
 
 export default function App() {
@@ -46,12 +48,12 @@ export default function App() {
 
   return (
     <div className="container">
-      <NavBar />
+      <ResponsiveAppBar />
       <div className="row min-vh-100">
         <div className="col d-flex flex-column justify-content-center align-items-center">
           {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
             <div>
-              <h1>Speed Camera</h1>
+              <h1>Pickup Football</h1>
 
               <div className="mt-5">
                 <button onClick={getPosts} className="btn btn-dark btn-lg w-100">Get Posts from server</button>
