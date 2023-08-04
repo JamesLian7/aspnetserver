@@ -35,6 +35,7 @@
     border: none; 
     border-radius: 0.25rem; 
     cursor: pointer; 
+
   }
   
 
@@ -243,4 +244,13 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
+}
+
+
+h2{
+  color: black;
+  text-shadow: 2px 2px #42cb67;
+  text-align: center;
+
+  font-size: 50px;
 }

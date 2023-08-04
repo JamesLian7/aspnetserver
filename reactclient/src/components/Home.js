@@ -51,7 +51,7 @@ export default function App() {
           <div className="box2">
             {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
               <div>
-                <h1>Footy Funhub</h1>
+                <h2>Footy Funhub</h2>
                 <div className="background-container background-image">
       </div>
   
@@ -78,7 +78,7 @@ export default function App() {
           <table className="table table-bordered border-dark">
             <thead>
               <tr>
-                <th scope="col">Post Number (PK)</th>
+                <th scope="col">Post Number </th>
                 <th scope="col">Title</th>
                 <th scope="col">Description</th>
                 <th scope="col"></th>
