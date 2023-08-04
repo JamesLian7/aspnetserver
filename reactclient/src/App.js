@@ -50,15 +50,15 @@ export default function App() {
   return (
     <div className="container">
       <ResponsiveAppBar />
-      <div className="row min-vh-100">
-        <div className="col d-flex flex-column justify-content-center align-items-center">
+      <div className="box1">
+        <div className="box2">
           {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
             <div>
               <h1>Pickup FootballFinder</h1>
 
-              <div className="mt-5">
-                <button onClick={getPosts} className="btn btn-dark btn-lg w-100">Get Posts from server</button>
-                <button onClick={() => setShowingCreateNewPostForm(true)} className="btn btn-secondary btn-lg w-100 mt-4">Create New Post</button>
+              <div className="box3">
+                <button onClick={getPosts} className="button1">Find Games</button>
+                <button onClick={() => setShowingCreateNewPostForm(true)} className="button2">Create Post</button>
               </div>
             </div>
           )}
@@ -92,15 +92,15 @@ export default function App() {
                 <td>{post.title}</td>
                 <td>{post.content}</td>
                 <td>
-                  <button onClick={() => setPostCurrentlyBeingUpdated(post)} className="btn btn-dark btn-lg mx-3 my-3">Update</button>
-                  <button onClick={() => { if(window.confirm(`Are you sure you want to delete the post titled "${post.title}"?`)) deletePost(post.postId) }} className="btn btn-secondary btn-lg">Delete</button>
+                  <button onClick={() => setPostCurrentlyBeingUpdated(post)} className="btn1">Update</button>
+                  <button onClick={() => { if(window.confirm(`Are you sure you want to delete the post titled "${post.title}"?`)) deletePost(post.postId) }} className="btn2">Delete</button>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
 
-        <button onClick={() => setPosts([])} className="btn btn-dark btn-lg w-100">Empty React posts array</button>
+        <button onClick={() => setPosts([])} className="btn3">Empty React posts array</button>
       </div>
     );
   }
