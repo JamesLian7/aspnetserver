@@ -225,3 +225,22 @@
 .btnCancelPost:hover {
   background-color: rgb(111, 11, 11);
 }
+
+
+
+.background-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-image {
+  background-image: url('/Users/jameslian/Documents/aspnetserver/reactclient/src/images/container.jpg'); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}

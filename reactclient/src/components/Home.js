@@ -52,6 +52,8 @@ export default function App() {
             {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
               <div>
                 <h1>Footy Funhub</h1>
+                <div className="background-container background-image">
+      </div>
   
                 <div className="box3">
                   <button onClick={getPosts} className="button1">Find Games</button>
@@ -156,3 +158,10 @@ export default function App() {
       alert('Post successfully deleted. After clicking OK, look at the table below to see your post disappear.');
     }
   }
+
+  
+ 
+  
+  
+  
+  
