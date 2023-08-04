@@ -60,8 +60,8 @@ export default function PostCreateForm(props) {
                 <input value={formData.content} name="content" type="text" className="form-control" onChange={handleChange} />
             </div>
 
-            <button onClick={handleSubmit} className="btn btn-dark btn-lg w-100 mt-5">Submit</button>
-            <button onClick={() => props.onPostCreated(null)} className="btn btn-secondary btn-lg w-100 mt-3">Cancel</button>
+            <button onClick={handleSubmit} className="btnSubmitPost btn-dark btn-lg w-100 mt-5">Submit</button>
+            <button onClick={() => props.onPostCreated(null)} className="btnCancelPost btn-secondary btn-lg w-100 mt-3">Cancel</button>
         </form>
     );
 }

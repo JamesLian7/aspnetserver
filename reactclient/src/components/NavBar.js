@@ -19,7 +19,7 @@ import { color } from '@mui/system';
 import * as React from 'react';
 
 
-const pages = ['Home', 'About', 'Account'];
+const pages = [ 'About', 'Account'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
