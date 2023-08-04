@@ -56,10 +56,10 @@
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
-    margin-top: 1rem; /* Added margin-top of 1rem (adjust as needed) */
+    margin-top: 1rem; 
   }
   
-  /* Additional styles for button states (e.g., hover, active) if needed */
+
   .button2:hover {
     background-color: #5a6268;
   }
@@ -68,25 +68,23 @@
     background-color: #4e555b;
   }
   
-  /* Custom class for table container */
+
 .my-table {
-    /* Add styles to make the container responsive */
+
     overflow-x: auto;
-    margin-top: 5;
-    margin-top: 1rem; /* Adjust the value as needed */
-  }
-  
-  /* Custom class for the table */
-  .my-table {
-    /* Add styles to format the table as needed */
+    margin-top: 10;
+    margin-top: 1rem; 
     width: 100%;
-    border-collapse: collapse; /* Optional, to remove space between table cells */
+    border-collapse: collapse; 
   }
   
-  /* Custom class for a bordered table */
+  
+
+  
+
   .my-table-bordered {
-    border: 1px solid #ccc; /* Optional, add borders to table cells */
-    border-color: #000; /* Set the border color to a dark color (black) */
+    border: 1px solid #ccc;
+    border-color: #000; 
   }
 
   .btn1 {
@@ -95,79 +93,74 @@
     text-align: center;
     vertical-align: middle;
     user-select: none;
-    background-color: #343a40; /* Dark color */
-    color: #ffffff; /* White text */
+    background-color: #343a40; 
+    color: #ffffff; 
     border: 1px solid transparent;
     padding: 0.5rem 1rem;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem; 
     line-height: 1.5;
     border-radius: 0.3rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 1.5rem; 
+    margin-left: 0.75rem; 
+    margin-right: 0.75rem; 
+    margin-top: 0.75rem; 
+    margin-bottom: 0.75rem; 
   }
   
-  /* Style for the large button */
-  .btn1 {
-    font-size: 1.5rem; /* 24px */
+
+  .btn1:hover {
+    background-color: green;
   }
-  
-  /* Style for margin on the X-axis (horizontal) */
-  .btn1 {
-    margin-left: 0.75rem; /* 12px */
-    margin-right: 0.75rem; /* 12px */
-  }
-  
-  /* Style for margin on the Y-axis (vertical) */
-  .btn1 {
-    margin-top: 0.75rem; /* 12px */
-    margin-bottom: 0.75rem; /* 12px */
-  }
+
   .btn2 {
     display: inline-block;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
     user-select: none;
-    background-color: #6c757d; /* Secondary color */
-    color: #ffffff; /* White text */
+    background-color: #6c757d; 
+    color: #ffffff; 
     border: 1px solid transparent;
     padding: 0.5rem 1rem;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
     line-height: 1.5;
     border-radius: 0.3rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      font-size: 1.5rem; 
   }
-  
-  /* Style for the large button */
-  .btn2 {
-    font-size: 1.5rem; /* 24px */
+  .btn2:hover{
+    background-color: rgb(111, 11, 11);
   }
 
-  /* Style for the dark button */
+
+
+
 .btn3 {
   display: inline-block;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  background-color: #343a40; /* Dark color */
-  color: #ffffff; /* White text */
+  background-color: #343a40; 
+  color: #ffffff; 
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem; 
   line-height: 1.5;
   border-radius: 0.3rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-/* Style for the large button */
+
 .btn3 {
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem; 
 }
 
-/* Style for the full-width button */
+
 .btn3{
   width: 100%;
 }
@@ -177,3 +170,58 @@
 
 
 
+
+
+.btnSubmitPost{
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #343a40; 
+  color: #ffffff; 
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem; 
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 1.5rem; 
+  margin-left: 0.75rem; 
+  margin-right: 0.75rem; 
+  margin-top: 0.75rem; 
+  margin-bottom: 0.75rem; 
+
+}
+
+.btnSubmitPost:hover {
+  background-color: green;
+}
+
+.btnCancelPost{
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #343a40; 
+  color: #ffffff; 
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem; 
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 1.5rem; 
+  margin-left: 0.75rem; 
+  margin-right: 0.75rem; 
+  margin-top: 0.75rem; 
+  margin-bottom: 0.75rem; 
+
+}
+
+.btnCancelPost:hover {
+  background-color: rgb(111, 11, 11);
+}
