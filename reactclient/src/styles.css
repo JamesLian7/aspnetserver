@@ -12,3 +12,168 @@
 .help{
     background-color: green;
 }
+.box1{
+    min-height: 100vh;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box3{
+    margin-top: 5;
+}
+
+.button1 {
+    display: block; 
+    width: 100%;
+    padding: 1rem; 
+    font-size: 1.25rem; 
+    color: #fff; 
+    background-color: #343a40;
+    border: none; 
+    border-radius: 0.25rem; 
+    cursor: pointer; 
+  }
+  
+
+  .button1:hover {
+    background-color: #495057; 
+  }
+  
+  .button1:active {
+    background-color: #212529; 
+  }
+
+  .button2 {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 1rem; /* Added margin-top of 1rem (adjust as needed) */
+  }
+  
+  /* Additional styles for button states (e.g., hover, active) if needed */
+  .button2:hover {
+    background-color: #5a6268;
+  }
+  
+  .button2:active {
+    background-color: #4e555b;
+  }
+  
+  /* Custom class for table container */
+.my-table {
+    /* Add styles to make the container responsive */
+    overflow-x: auto;
+    margin-top: 5;
+    margin-top: 1rem; /* Adjust the value as needed */
+  }
+  
+  /* Custom class for the table */
+  .my-table {
+    /* Add styles to format the table as needed */
+    width: 100%;
+    border-collapse: collapse; /* Optional, to remove space between table cells */
+  }
+  
+  /* Custom class for a bordered table */
+  .my-table-bordered {
+    border: 1px solid #ccc; /* Optional, add borders to table cells */
+    border-color: #000; /* Set the border color to a dark color (black) */
+  }
+
+  .btn1 {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #343a40; /* Dark color */
+    color: #ffffff; /* White text */
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Style for the large button */
+  .btn1 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  /* Style for margin on the X-axis (horizontal) */
+  .btn1 {
+    margin-left: 0.75rem; /* 12px */
+    margin-right: 0.75rem; /* 12px */
+  }
+  
+  /* Style for margin on the Y-axis (vertical) */
+  .btn1 {
+    margin-top: 0.75rem; /* 12px */
+    margin-bottom: 0.75rem; /* 12px */
+  }
+  .btn2 {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #6c757d; /* Secondary color */
+    color: #ffffff; /* White text */
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Style for the large button */
+  .btn2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  /* Style for the dark button */
+.btn3 {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #343a40; /* Dark color */
+  color: #ffffff; /* White text */
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Style for the large button */
+.btn3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+/* Style for the full-width button */
+.btn3{
+  width: 100%;
+}
+
+
+
+
+
+
