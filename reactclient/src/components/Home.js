@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router";
 import React, { useState } from "react";
-import Constants from "/Users/jameslian/Documents/aspnetserver/reactclient/src/utilities/Constants.js";
+import Constants from "../Utilities/Constants.js";
 import PostCreateForm from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/PostCreateForm.js";
 import PostUpdateForm from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/PostUpdateForm.js";
 import About from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/About.js";
 import Account from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/Account.js";
-
+import NavBar from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/NavBar.js"
 
 export default function App() {
     const [posts, setPosts] = useState([]);
@@ -13,9 +13,9 @@ export default function App() {
     const [postCurrentlyBeingUpdated, setPostCurrentlyBeingUpdated] = useState(null);
   
     function getPosts() {
-      const url = Constants.API_URL_GET_ALL_POSTS;
-  
-      fetch(url, {
+      const url = "https://footyfunhub.azurewebsites.net/get-all-posts";
+  //test
+      fetch(url,  {
         method: 'GET'
       })
         .then(response => response.json())
@@ -47,6 +47,7 @@ export default function App() {
   
     return (
       <div className="container">
+        <NavBar/>
         <div className="box1">
           <div className="box2">
             {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
