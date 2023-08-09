@@ -1,6 +1,6 @@
 
 const API_BASE_URL_DEVELOPMENT = 'https://localhost:7081';
-const API_BASE_URL_PRODUCTION = 'footyfunhub.azurewebsites.net';
+const API_BASE_URL_PRODUCTION = 'https://purple-pebble-083672b10.3.azurestaticapps.net';
 
 const ENDPOINTS = {
     GET_ALL_POSTS: 'get-all-posts',
