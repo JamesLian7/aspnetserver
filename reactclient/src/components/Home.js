@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import React, { useState } from "react";
-import Constants from "/Users/jameslian/Documents/aspnetserver/reactclient/src/utilities/Constants.js";
+import Constants from "/aspnetserver/reactclient/src/utilities/Constants.js";
 import PostCreateForm from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/PostCreateForm.js";
 import PostUpdateForm from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/PostUpdateForm.js";
 import About from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/About.js";
