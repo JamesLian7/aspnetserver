@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Constants from '../utilities/Constants'
+import Constants from '../Utilities/Constants'
 
 export default function PostUpdateForm(props) {
     const initialFormData = Object.freeze({
