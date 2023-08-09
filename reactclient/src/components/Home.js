@@ -14,7 +14,7 @@ export default function App() {
   
     function getPosts() {
       const url = "https://footyfunhub.azurewebsites.net/get-all-posts";
-  
+  //test
       fetch(url,  {
         method: 'GET'
       })
