@@ -5,7 +5,7 @@ import PostCreateForm from "/Users/jameslian/Documents/aspnetserver/reactclient/
 import PostUpdateForm from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/PostUpdateForm.js";
 import About from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/About.js";
 import Account from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/Account.js";
-
+import NavBar from "/Users/jameslian/Documents/aspnetserver/reactclient/src/components/NavBar.js"
 
 export default function App() {
     const [posts, setPosts] = useState([]);
@@ -47,6 +47,7 @@ export default function App() {
   
     return (
       <div className="container">
+        <NavBar/>
         <div className="box1">
           <div className="box2">
             {(showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null) && (
