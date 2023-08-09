@@ -13,9 +13,9 @@ export default function App() {
     const [postCurrentlyBeingUpdated, setPostCurrentlyBeingUpdated] = useState(null);
   
     function getPosts() {
-      const url = Constants.API_URL_GET_ALL_POSTS;
+      const url = "https://footyfunhub.azurewebsites.net/get-all-posts";
   
-      fetch(url, {
+      fetch(url,  {
         method: 'GET'
       })
         .then(response => response.json())
